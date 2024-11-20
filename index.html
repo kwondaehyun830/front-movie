@@ -1,12 +1,26 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-  </head>
-  <body>
-    여기에 기본 html 작성
-  </body>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>영화 리스트</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Movie list</h1>
+        <div class="search-bar">
+            <input type="text" id="search-input" placeholder="영화 검색...">
+            <button id="search-button">검색</button>
+        </div>
+    </header>
+    <main>
+        <section id="movie-list">
+            
+        </section>
+        <button id="load-more" style="display: none;">더보기</button>
+    </main>
+    <div id="no-results" style="display: none;">검색 결과가 없습니다.</div>
+    <script src="index.js"></script>
+</body>
 </html>
